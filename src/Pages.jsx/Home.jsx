@@ -1,7 +1,27 @@
 import { Container, Form, Button } from "react-bootstrap";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css'; 
+import React, {useState} from "react";
 
 const Home = ()=> {
+
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    password: ''
+  })
+
+  const handleChange = (e) => {
+    const {name, value} = e.target;
+    setFormData({
+        ...formData,
+        [name]: value
+    })
+
+  }
+
+
+
+
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -22,7 +42,10 @@ const Home = ()=> {
 <hr size="3"/>
 
 <Container fluid className="text-center p-4 bg-light" >
-    <Form>
+    <Form onSubmit={handleSubmit}
+          name="name"
+          value={formData.name}
+          onChange={handleChange}> 
         <label> 
         Name:
         <input type="text" placeholder="Enter you name" />
