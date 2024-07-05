@@ -8,8 +8,8 @@ const Layout = () => {
       <Container fluid className="p-1">
         <Outlet />
       </Container>
-      <Container fluid className="bg-light text-center text-black">
-        <h2>wwww.mycompany.com</h2>
+      <Container fluid className="bg-warning text-center text-black">
+        <h2>wwww.javarndpvtltd.com</h2>
       </Container>
     </>
   );

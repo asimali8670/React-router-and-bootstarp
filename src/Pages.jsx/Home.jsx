@@ -19,6 +19,9 @@ const Home = () => {
               </h1>
 
               <Col lg={6} className="d-none d-lg-block">
+                <Col className="text-white">
+                  <h2>HI, I'm Asim!</h2>
+                </Col>
                 <img
                   src="./assets/port-logo6.avif"
                   alt="Hero"

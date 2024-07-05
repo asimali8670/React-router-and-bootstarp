@@ -1,14 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Image } from "react-bootstrap";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg ml-auto navbar-light bg-light text-primary">
+    <nav className="navbar navbar-expand-lg ml-auto navbar-light bg-warning text-primary">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-          <img
+          <Image
             src="./assets/react-logo.png"
+            roundedCircle
+            fluid
             width="70"
             height="60"
             alt="Logo"

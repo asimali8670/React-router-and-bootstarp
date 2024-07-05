@@ -33,3 +33,35 @@
     padding: 20px;
   }
   
+
+ul {
+  list-style-type: none; 
+  padding: 0;
+}
+
+.bg-image-about {
+  background-image: url('./assets/about-logo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+.bg-image-contact {
+  background-image: url('./assets/contacts-logo.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+.bg-image-service {
+  background-image: url('./assets/service-logo.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}

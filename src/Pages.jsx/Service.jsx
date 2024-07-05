@@ -6,13 +6,14 @@ const Service = ()=> {
     return(
         <>
 
-<Container fluid className="bg-warning text-center text-white p-4">
+<div className="bg-image-service">
+<Container fluid className="text-center text-white p-4">
 <h1>Our Services!</h1>
 </Container>
 
 <hr size="3"/>
 
-<Container className="bg-light" >
+<Container className="text-white" >
 <ul>
     <li>Consultation</li>
     <li>Development</li>
@@ -23,6 +24,7 @@ const Service = ()=> {
     <li>Unit testing</li>
 </ul>
 </Container>
+</div>
 
 
         
