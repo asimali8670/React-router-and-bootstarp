@@ -2,8 +2,15 @@ import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { projects } from "./Data";
 import "./style.css";
+import { useNavigate } from "react-router-dom";
 
 const Portfolio = () => {
+  const navigate = useNavigate();
+
+  const go = () => {
+    navigate("/home");
+  };
+
   return (
     <>
       <div className="bg-image">
@@ -64,6 +71,9 @@ const Portfolio = () => {
               </Col>
             ))}
           </Row>
+        </Container>
+        <Container className="text-center">
+        <Button onClick={go}>Go back to homepage!</Button>
         </Container>
       </div>
     </>

@@ -2,9 +2,20 @@ import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./style.css"; // Import your custom CSS file
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+
+const navigate = useNavigate();
+
+const display = ()=>{
+  navigate("/portfolio")
+}
+
+
+
+
   return (
     <div className="bg-image">
       <div className="bg-overlay">
@@ -33,9 +44,9 @@ const Home = () => {
                 I am a passionate developer with a knack for creating amazing
                 web applications. Explore my work and get in touch!
               </p>
-              <Link to="/portfolio">
-                <Button variant="primary">View Portfolio</Button>
-              </Link>
+              
+                <Button variant="primary" onClick={display}>View Portfolio</Button>
+          
             </Col>
           </Row>
         </Container>
